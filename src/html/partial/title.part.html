@@ -1,0 +1,37 @@
+<section class="hero is-primary">
+    <div class="hero-body">
+        <div class="container">
+            <h1 class="title">
+                タイトル
+            </h1>
+            <h2 class="subtitle">
+                <span class="icon">
+                    <i class="fa fa-rocket" aria-hidden="true"></i>
+                </span>
+                サブタイトル
+            </h2>
+        </div>
+    </div>
+    <div class="hero-foot">
+        <div class="container">
+            <nav class="tabs is-boxed">
+                <ul>
+                    <li id="index.html">
+                        <a href="index.html">ホーム</a>
+                    </li>
+                    <li id="day1.html">
+                        <a href="day1.html">1日目</a>
+                    </li>
+                    <li id="day2.html">
+                        <a href="day2.html">2日目</a>
+                    </li>
+                </ul>
+                <script>
+                    const l = window.location.pathname.toString().replace(/.*\//, '');
+                    const element = document.getElementById(l);
+                    if (element) element.className = 'is-active';
+                </script>
+            </nav>
+        </div>
+    </div>
+</section>
